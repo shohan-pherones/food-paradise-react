@@ -1,0 +1,47 @@
+.logo h1 {
+  font-size: 50px;
+  margin: 50px 0;
+  color: #01689c;
+  background-color: white;
+  display: inline-block;
+  padding: 10px 50px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.search-field input {
+  background-color: transparent;
+  font-family: inherit;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  color: #01689c;
+  border-bottom: 2px solid #01689c;
+  padding: 10px 20px;
+  transition: all 0.15 linear;
+}
+
+.search-field input:focus {
+  border-color: crimson;
+}
+
+.search-field button {
+  background-color: #01689c;
+  color: white;
+  border: 2px solid #01689c;
+  font-family: inherit;
+  font-size: 20px;
+  padding: 10px 20px;
+  margin-left: 20px;
+  border-radius: 30px;
+  display: inline-block;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.15 linear;
+}
+
+.search-field button:hover {
+  background-color: transparent;
+  color: #01689c;
+}
