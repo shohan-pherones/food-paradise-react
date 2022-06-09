@@ -1,0 +1,60 @@
+.food {
+  background-color: white;
+  height: 550px;
+  width: 400px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.food-image {
+  overflow: hidden;
+  height: 400px;
+  width: 400px;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  transition: all 0.2s linear;
+}
+
+.food:hover img {
+  transform: scale(0.8);
+}
+
+.food-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 150px;
+  justify-content: space-evenly;
+}
+
+.food-details h2 {
+  color: #01689c;
+  margin: 0;
+}
+
+.food-details a {
+  width: 200px;
+  padding: 7px 0;
+  text-decoration: none;
+  background-color: #01689c;
+  color: white;
+  border: 2px solid #01689c;
+  font-family: inherit;
+  font-size: 20px;
+  border-radius: 30px;
+  display: inline-block;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.15 linear;
+}
+
+.food-details a:hover {
+  background-color: transparent;
+  color: #01689c;
+}

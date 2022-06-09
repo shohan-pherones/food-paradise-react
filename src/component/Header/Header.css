@@ -1,5 +1,5 @@
 .logo h1 {
-  font-size: 50px;
+  font-size: 40px;
   margin: 50px 0;
   color: #01689c;
   background-color: white;
@@ -44,4 +44,11 @@
 .search-field button:hover {
   background-color: transparent;
   color: #01689c;
+}
+
+.foods {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 70px 0;
 }
