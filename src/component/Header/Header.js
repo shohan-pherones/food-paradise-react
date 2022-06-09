@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Foods from "../Foods/Foods";
 import "./Header.css";
 
 const Header = () => {
-  const [searchTerm, setSearchTerm] = useState([]);
+  const [searchTerm, setSearchTerm] = useState("");
   const [foods, setFoods] = useState([]);
 
   const handleSearch = async (foodName) => {
@@ -12,11 +12,8 @@ const Header = () => {
     );
     const data = await response.json();
     setFoods(data.meals);
+    setSearchTerm("");
   };
-
-  useEffect(() => {
-    handleSearch("fish");
-  }, []);
 
   return (
     <div className="logo">
@@ -26,6 +23,7 @@ const Header = () => {
           type="text"
           placeholder="Search any food..."
           onChange={(e) => setSearchTerm(e.target.value)}
+          value={searchTerm}
         />
         <button onClick={() => handleSearch(searchTerm)}>Search</button>
       </div>
